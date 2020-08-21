@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paint</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="pic.jpeg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div class="paintBox flex-container" id="myDiv">
+        <div class="box active" id="highlighter" data-toggle="tooltip" data-placement="right" title="Highlight">
+            <i class="fas fa-highlighter"></i>
+        </div>
+        <div class="box" id="pencil" data-toggle="tooltip" data-placement="right" title="Pencil">
+            <i class="fas fa-pen"></i>
+        </div>
+        <div class="box" id="eraser" data-toggle="tooltip" data-placement="right" title="Eraser">
+            <i class="fas fa-eraser"></i>
+        </div>
+
+    </div>
+    <div id="colorDiv" class="flex-container">
+        <div class="colorStyle">
+            <input type="color" class="primary_color">
+        </div>
+    </div>
+    <div id="colorDivPen" class="flex-container">
+        <div class="colorStylePen" id="sizeSelect">
+            <input type="color" class="primary_color_pen">
+        </div>
+        <div class="sizeStylePen" id="small">
+            <i style="font-size:10px" class="fa fa-pen"></i>
+        </div>
+        <div class="sizeStylePen" id="medium">
+            <i style="font-size:14px" class="fa fa-pen"></i>
+        </div>
+        <div class="sizeStylePen" id="large">
+            <i style="font-size:18px" class="fa fa-pen"></i>
+        </div>
+    </div>
+    <div id="eraserDiv" class="flex-container">
+        <div class="sizeStyleEraser" id="smallE">
+            <i style="font-size:10px" class="fa fa-eraser"></i>
+        </div>
+        <div class="sizeStyleEraser" id="mediumE">
+            <i style="font-size:14px" class="fa fa-eraser"></i>
+        </div>
+        <div class="sizeStyleEraser" id="largeE">
+            <i style="font-size:18px" class="fa fa-eraser"></i>
+        </div>
+    </div>
+    <canvas id="canvas"></canvass>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
